@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TrickElect Enterprise – Advanced Solar installations and futuristic electrical engineering in Ogbomoso, Lagos, and Ibadan." />
+  <title>TrickElect Enterprise | The Future of Power</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            trickOrange: '#FF4500',
+            electBlue: '#00BFFF', // Electric Blue for sparks/glows
+          },
+          animation: {
+            'electric-pulse': 'electricPulse 2s infinite',
+            'charge-fill': 'chargeFill 3s infinite',
+            'grid-travel': 'gridTravel 60s linear infinite',
+          },
+          keyframes: {
+            electricPulse: {
+              '0%, 100%': { boxShadow: '0 0 5px #00BFFF, 0 0 10px #00BFFF, 0 0 20px #00BFFF' },
+              '50%': { boxShadow: '0 0 10px #00BFFF, 0 0 20px #00BFFF, 0 0 40px #00BFFF' },
+            },
+            chargeFill: {
+              '0%': { width: '0%', opacity: '0.1' },
+              '50%': { width: '100%', opacity: '1' },
+              '100%': { width: '100%', opacity: '0' },
+            },
+            gridTravel: {
+              from: { backgroundPosition: '0 0' },
+              to: { backgroundPosition: '0 1000px' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    /* Futuristic Scrolling Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #1a1a1a; }
+    ::-webkit-scrollbar-thumb { background: #FF4500; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #00BFFF; }
+
+    /* Moving Grid Background for Hero */
+    .animated-grid {
+      background-image: 
+        linear-gradient(rgba(0, 191, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 191, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans scroll-smooth">
+
+  <header class="fixed w-full bg-gray-950/90 backdrop-blur-sm shadow-[0_2px_15px_rgba(0,191,255,0.1)] z-50 border-b border-gray-800">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="flex items-center space-x-2">
+        <h1 class="text-2xl font-bold text-trickOrange" style="text-shadow: 0 0 10px #FF4500;">TrickElect<span class="text-electBlue" style="text-shadow: 0 0 10px #00BFFF;">_</span></h1>
+      </div>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#home" class="hover:text-electBlue transition font-medium">Home</a>
+        <a href="#services" class="hover:text-electBlue transition font-medium">Services</a>
+        <a href="#reviews" class="hover:text-electBlue transition font-medium">Reviews</a>
+        <a href="#locations" class="hover:text-electBlue transition font-medium">Reach</a>
+        <a href="#contact" class="hover:text-electBlue transition font-medium">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="flex items-center justify-center min-h-screen relative overflow-hidden animated-grid animate-grid-travel">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#030712_100%)]"></div>
+    
+    <div class="text-center px-4 md:px-8 relative z-10">
+      <div class="inline-block border border-electBlue/30 bg-electBlue/5 px-4 py-1 rounded-full text-electBlue text-xs uppercase tracking-widest mb-4">The Future of Power Installation</div>
+      <h2 class="text-5xl md:text-7xl font-extrabold mb-4 text-gray-50 leading-tight">Solar & Next-Gen <br><span class="text-trickOrange">Electrical</span> Systems.</h2>
+      <p class="text-lg md:text-2xl mb-12 text-gray-400 max-w-3xl mx-auto">Shocking Service, Electrifying Results. Engineering sustainable energy solutions across Ogbomoso, Lagos, and Ibadan.</p>
+      
+      <a href="#contact" class="bg-trickOrange hover:bg-orange-600 text-white font-bold px-10 py-4 rounded-lg transition-all shadow-lg animate-electric-pulse text-lg tracking-wide uppercase">
+        <i class="fas fa-bolt mr-2 text-electBlue"></i> Request a Quote
+      </a>
+    </div>
+  </section>
+
+  <section id="services" class="py-24 bg-gray-900 border-y border-gray-800">
+    <div class="container mx-auto px-6">
+      <h3 class="text-4xl font-bold text-center mb-16 text-gray-100">Advanced Energy Solutions</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-gray-950 p-8 rounded-xl border border-gray-800 hover:border-trickOrange/50 transition-all hover:-translate-y-2 group relative overflow-hidden">
+          <div class="absolute -inset-1 bg-trickOrange/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition"></div>
+          
+          <div class="relative z-10">
+            <i class="fas fa-solar-panel text-5xl text-trickOrange mb-6 block" style="filter: drop-shadow(0 0 8px #FF4500);"></i>
+            <h4 class="font-bold text-2xl mb-3 text-gray-50">Solar & Inverter</h4>
+            <p class="text-gray-400 text-sm mb-6">Full-scale solar farms, smart hybrid inverters, and high-density battery storage banks.</p>
+            
+            <div class="border border-gray-700 rounded-md p-3 bg-black">
+                <div class="flex justify-between text-xs text-gray-500 mb-1"><span>System Status</span><span class="text-green-400">CHARGING</span></div>
+                <div class="w-full h-4 bg-gray-800 rounded-full overflow-hidden relative">
+                    <div class="absolute inset-0 bg-green-500 animate-charge-fill rounded-full shadow-[0_0_10px_#4ade80]"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-950 p-8 rounded-xl border border-gray-800 hover:border-electBlue/50 transition-all hover:-translate-y-2 group relative">
+          <i class="fas fa-satellite-dish text-5xl text-electBlue mb-6 block" style="filter: drop-shadow(0 0 8px #00BFFF);"></i>
+          <h4 class="font-bold text-2xl mb-3 text-gray-50">Smart Wiring</h4>
+          <p class="text-gray-400 text-sm">Industrial power distribution and futuristic lighting circuits with aesthetic precision.</p>
+        </div>
+
+        <div class="bg-gray-950 p-8 rounded-xl border border-gray-800 hover:border-electBlue/50 transition-all hover:-translate-y-2 group relative">
+          <i class="fas fa-project-diagram text-5xl text-electBlue mb-6 block" style="filter: drop-shadow(0 0 8px #00BFFF);"></i>
+          <h4 class="font-bold text-2xl mb-3 text-gray-50">Grid Maintenance</h4>
+          <p class="text-gray-400 text-sm">Fault detection, panel upgrades, and high-efficiency AC installations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="py-24 bg-gray-950">
+    <div class="container mx-auto px-6">
+      <h3 class="text-4xl font-bold text-center mb-16 text-gray-100">Verified Client Intelligence</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="bg-gray-900 p-6 rounded-lg border border-gray-800 shadow-[0_0_15px_rgba(74,222,128,0.05)] hover:border-green-500 transition">
+          <div class="text-yellow-400 mb-3 text-sm">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="italic text-gray-300 mb-5">"TrickElect handled the solar installation in Ibadan. Neat wiring and amazing output. Futuristic approach."</p>
+          <p class="font-bold text-gray-50 text-sm">— Mr. Adeyemi, Ibadan</p>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-lg border border-gray-800 shadow-[0_0_15px_rgba(74,222,128,0.05)] hover:border-green-500 transition">
+          <div class="text-yellow-400 mb-3 text-sm">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="italic text-gray-300 mb-5">"Professional service. They rewired my office in Lagos. They use cutting-edge practices."</p>
+          <p class="font-bold text-gray-50 text-sm">— Engr. Samuel, Lagos</p>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-lg border border-gray-800 shadow-[0_0_15px_rgba(251,146,60,0.05)] hover:border-trickOrange transition">
+          <div class="text-yellow-400 mb-3 text-sm">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-gray-600"></i>
+          </div>
+          <p class="italic text-gray-300 mb-5">"Great technical knowledge. Fixed my complex electrical fault in Ogbomoso quickly."</p>
+          <p class="font-bold text-gray-50 text-sm">— Dr. Bukola, Ogbomoso</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="locations" class="py-24 bg-gray-900 border-y border-gray-800">
+    <div class="container mx-auto px-6">
+      <h3 class="text-4xl font-bold text-center mb-16 text-gray-100">Network Coverage</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="border border-gray-700 bg-gray-950 p-8 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.5)]">
+          <i class="fas fa-map-marked-alt text-3xl text-electBlue mb-4 block"></i>
+          <h4 class="text-2xl font-bold mb-2 text-gray-50">Lagos State</h4>
+          <p class="text-gray-400">Mainland & Island deployment.</p>
+        </div>
+        <div class="border border-gray-700 bg-gray-950 p-8 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.5)]">
+          <i class="fas fa-city text-3xl text-electBlue mb-4 block"></i>
+          <h4 class="text-2xl font-bold mb-2 text-gray-50">Ibadan</h4>
+          <p class="text-gray-400">Comprehensive city-wide coverage.</p>
+        </div>
+        <div class="border border-gray-700 bg-gray-950 p-8 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.5)]">
+          <i class="fas fa-broadcast-tower text-3xl text-trickOrange mb-4 block"></i>
+          <h4 class="text-2xl font-bold mb-2 text-gray-50">Ogbomoso</h4>
+          <p class="text-gray-400">Headquarters & Operations Base.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-24 bg-black relative overflow-hidden">
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-1/2 bg-electBlue/10 blur-[120px] rounded-full"></div>
+    
+    <div class="container mx-auto px-6 text-center relative z-10">
+      <h3 class="text-4xl font-bold mb-8 text-gray-50" style="text-shadow: 0 0 15px #FF4500;">Initialize Connection</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 max-w-5xl mx-auto">
+        <div class="bg-gray-900 border border-gray-800 p-6 rounded-lg">
+          <i class="fas fa-phone-alt text-2xl text-electBlue mb-3"></i>
+          <p class="font-bold text-gray-100">Voice Lines</p>
+          <p class="text-gray-400">07030307511<br>09121897152</p>
+        </div>
+        <div class="bg-gray-900 border border-gray-800 p-6 rounded-lg">
+          <i class="fas fa-network-wired text-2xl text-electBlue mb-3"></i>
+          <p class="font-bold text-gray-100">Service Nodes</p>
+          <p class="text-gray-400">Adenike, Ogbomoso<br>Lagos • Ibadan Mobile</p>
+        </div>
+        <div class="bg-gray-900 border border-gray-800 p-6 rounded-lg">
+          <i class="fas fa-microchip text-2xl text-trickOrange mb-3"></i>
+          <p class="font-bold text-gray-100">Core Services</p>
+          <p class="text-gray-400">Solar Gen / Hybrid Storage<br>Advanced Engineering</p>
+        </div>
+      </div>
+      
+      <a href="https://wa.me/2347030307511" class="inline-block bg-green-600 hover:bg-green-500 text-white font-extrabold py-5 px-12 rounded-full text-2xl transition-all shadow-[0_0_20px_rgba(22,163,74,0.5)] hover:shadow-[0_0_30px_rgba(22,163,74,0.8)] tracking-tight">
+        <i class="fab fa-whatsapp mr-3"></i> Open WhatsApp Channel
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-gray-950 text-gray-600 text-center py-8 border-t border-gray-800">
+    <p class="text-sm tracking-widest">&copy; 2026 TRICKELECT_ENTERPRISE. SYSTEM_STATUS: ONLINE.</p>
+  </footer>
+
+</body>
+</html>
+          <i class="fas fa-plug text-4xl text-[#FF4500] mb-4"></i>
+          <h4 class="font-semibold text-xl mb-2">Wiring & Rewiring</h4>
+          <p class="text-gray-600 text-sm">Expert wiring services for new builds and upgrades for maximum safety.</p>
+        </div>
+
+        <div class="bg-white p-8 shadow rounded text-center hover:shadow-2xl transition-all border-b-4 border-transparent hover:border-[#FF4500]">
+          <i class="fas fa-snowflake text-4xl text-[#FF4500] mb-4"></i>
+          <h4 class="font-semibold text-xl mb-2">Air Conditioner Installation</h4>
+          <p class="text-gray-600 text-sm">Energy-efficient AC installations with proper electrical setup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="locations" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-4 text-gray-800">Our Service Reach</h3>
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">We provide expert electrical and solar solutions across the Southwest. From residential wiring to industrial installations, we go where you are.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="border-l-4 border-[#FF4500] pl-6 py-4 bg-gray-50">
+          <h4 class="text-xl font-bold mb-2">Lagos State</h4>
+          <p class="text-gray-600">We deliver service to <strong>everywhere in Lagos</strong>, including Island and Mainland areas.</p>
+        </div>
+        <div class="border-l-4 border-[#FF4500] pl-6 py-4 bg-gray-50">
+          <h4 class="text-xl font-bold mb-2">Ibadan</h4>
+          <p class="text-gray-600">Full coverage for <strong>everywhere in Ibadan</strong>, from Akala Express to Bodija and beyond.</p>
+        </div>
+        <div class="border-l-4 border-[#FF4500] pl-6 py-4 bg-gray-50">
+          <h4 class="text-xl font-bold mb-2">Ogbomoso</h4>
+          <p class="text-gray-600">Primary operations based in the heart of Ogbomoso town and surrounding areas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6 md:flex md:items-center md:space-x-12">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h3 class="text-3xl font-bold text-gray-800 mb-6">About TrickElect Enterprise</h3>
+        <p class="text-gray-700 leading-relaxed text-lg">
+          Based in Ogbomoso, **TrickElect Enterprise** is a specialist electrical firm focused on technical precision, sustainable energy, and modern aesthetics.
+        </p>
+        <p class="mt-4 text-gray-700 leading-relaxed">
+          We combine expert craftsmanship with cutting-edge practices to ensure every connection is safe, efficient, and visually appealing. With our expansion into solar energy systems, we now provide clean power to clients throughout **Lagos**, **Ibadan**, and **Ogbomoso**.
+        </p>
+      </div>
+      <div class="md:w-1/2">
+        <div class="bg-[#FF4500] h-80 rounded-2xl shadow-xl flex items-center justify-center text-white text-4xl font-bold text-center p-4">Solar & Electrical Excellence</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-gray-900 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-8 text-[#FF4500]">Get In Touch</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div class="p-4">
+          <i class="fas fa-phone-alt text-2xl text-[#FF4500] mb-2"></i>
+          <p class="font-bold">Call Us</p>
+          <p>07030307511<br>09121897152</p>
+        </div>
+        <div class="p-4">
+          <i class="fas fa-map-marker-alt text-2xl text-[#FF4500] mb-2"></i>
+          <p class="font-bold">Our Addresses</p>
+          <p>
+            Adenike Area, Ogbomoso<br>
+            Available Everywhere in Lagos<br>
+            Available Everywhere in Ibadan
+          </p>
+        </div>
+        <div class="p-4">
+          <i class="fas fa-bolt text-2xl text-[#FF4500] mb-2"></i>
+          <p class="font-bold">Expert Solutions</p>
+          <p>Solar Panels, Inverters, Batteries, and General Wiring.</p>
+        </div>
+      </div>
+      
+      <a href="https://wa.me/2347030307511" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-full text-xl transition shadow-lg">
+        <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-gray-400 text-center py-6">
+    <p>&copy; 2026 TrickElect Enterprise. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
